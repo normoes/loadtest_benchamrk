@@ -5,8 +5,6 @@ I don't like to install every little program on my machine, so I like to run the
 This image can be used to run `loadtest` within a docker container like this:
 
 ```
-    # build the image
-    docker build -t loadtest_benchmark .
     # using --rps (requests per seconds)
     docker run --rm normoes/loadtest_benchmark -c "loadtest -c 10 --rps 200 <some_URL>"
     # ab syntax
