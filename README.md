@@ -8,9 +8,9 @@ This image can be used to run `loadtest` within a docker container like this:
     # build the image
     docker build -t loadtest_benchmark .
     # using --rps (requests per seconds)
-    docker run --rm loadtest_benchmark -c "loadtest -c 10 --rps 200 <some_URL>"
+    docker run --rm normoes/loadtest_benchmark -c "loadtest -c 10 --rps 200 <some_URL>"
     # ab syntax
-    docker run --rm loadtest_benchmark -c "loadtest -c 10 -n 10000 <some_URL>"
+    docker run --rm normoes/loadtest_benchmark -c "loadtest -c 10 -n 10000 <some_URL>"
 ```
 
 ## syntax
